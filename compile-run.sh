@@ -1,0 +1,2 @@
+emcc -std=c++17 -IEmpirical/include/ -Os --js-library Empirical/include/emp/web/library_emp.js -s EXPORTED_FUNCTIONS="['_main', '_empCppCallback', '_empDoCppCallback']" -s "EXTRA_EXPORTED_RUNTIME_METHODS=['ccall', 'cwrap']" -s NO_EXIT_RUNTIME=1 CAAnimate.cpp -o CAAnimate.js
+python3 -m http.server

@@ -1,0 +1,12 @@
+for(int k = -1;k<2;k++){
+          for(int j = -1;j<2;j++){
+           if(cellExists(x+(1*k),y+(1*j))){
+             std::cout<<"x = x + "<< 1*k <<std::endl;
+             std::cout<<"y = y + "<< 1*j <<std::endl;
+
+             neighbor[n].x = x+(1*k);
+             neighbor[n].y = y+(1*j);
+             n++;
+           }
+          }
+    }
